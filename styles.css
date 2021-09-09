@@ -22,9 +22,9 @@ background-size: cover;
 }
 .container{
   display: flex;
-  flex-flow: column;
+  flex-flow: row wrap;
   align-content: flex-start;
-  justify-content: center;;
+  justify-content: space-around;
 }
 .head {
   display: flex;
@@ -44,12 +44,13 @@ img{
   height: 100px;
 }
 .main-boxes {
+  justify-content: space-between;
   align-self: center;
-  height: 260px;
-  width: 360px;
+  height: 345px;
+  width: 345px;
   padding:20px;
   border: 1px solid black;
-  background: white;
+  background-color:rgba( 225, 225, 225, .9);
   margin-bottom: 10px;
 
 }
