@@ -1,17 +1,6 @@
 let form = document.querySelector('form');
 let letsCookButton = document.querySelector('.lets-cook');
 
-form.addEventListener('submit', function(e) {
-  let radioValue = new FormData(form);
-  let selectedOption = '';
-  for (const entry of radioValue) {
-    selectedOption = selectedOption + entry[0] +  " = " + entry[1];
-  };
-  e.preventDefault();
-  return selectedOption;
-});
-
-
 let sides = [
 "Miso Glazed Carrots",
 "Coleslaw",
@@ -61,3 +50,25 @@ let desserts = [
 "Croissants",
 "Eclairs"
 ];
+form.addEventListener('submit', function(e) {
+  let radioValue = new FormData(form);
+  let selectedOption = '';
+  for (const entry of radioValue) {
+    selectedOption = selectedOption + entry[0] +  " = " + entry[1];
+  };
+  e.preventDefault();
+  return selectedOption;
+});
+
+function randomSide() {
+  let sideItem = Math.floor(Math.random()*sides.length);
+  return sides[sideItem];
+}
+function randomDessert() {
+  let dessertItem = Math.floor(Math.random()*desserts.length);
+  return desserts[dessertItem];
+}
+function randomMainDish() {
+  let mainDishItem = Math.floor(Math.random()*mains.length);
+  return mains[mainDishItem];
+}
