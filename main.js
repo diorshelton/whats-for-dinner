@@ -1,3 +1,16 @@
+let form = document.querySelector('form');
+let letsCookButton = document.querySelector('.lets-cook');
+
+form.addEventListener('submit', function(e) {
+  let radioValue = new FormData(form);
+  let selectedOption = '';
+  for (const entry of radioValue) {
+    selectedOption = selectedOption + entry[0] +  " = " + entry[1];
+  };
+  e.preventDefault();
+  return selectedOption;
+});
+
 
 let sides = [
 "Miso Glazed Carrots",
@@ -10,7 +23,7 @@ let sides = [
 "Shrimp Summer Rolls",
 "Garlic Butter Mushrooms",
 "Hush Puppies"
-]
+];
 
 let mains = [
 "Spaghetti and Meatballs",
@@ -26,7 +39,8 @@ let mains = [
 "Chicken Fried Rice",
 "Sheet Pan Fajitas",
 "Margarita Pizza"
-]
+];
+
 let desserts = [
 "Apple Pie",
 "Lemon Meringue Pie",
@@ -46,4 +60,4 @@ let desserts = [
 "Tart Tatin",
 "Croissants",
 "Eclairs"
-]
+];
