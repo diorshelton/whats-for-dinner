@@ -1,5 +1,8 @@
 let form = document.querySelector('form');
 let letsCookButton = document.querySelector('.lets-cook');
+let dinnerSuggestion = document.querySelector('.dinner-suggestion');
+let cookpot = document.querySelector('.cookpot');
+let suggestionHeader = document.querySelector('.suggestion-header');
 
 let sides = [
 "Miso Glazed Carrots",
@@ -54,10 +57,10 @@ form.addEventListener('submit', function(e) {
   let radioValue = new FormData(form);
   let selectedOption = '';
   for (const entry of radioValue) {
-    selectedOption = selectedOption + entry[0] +  " = " + entry[1];
+    selectedOption = entry[1];
   };
   e.preventDefault();
-  return selectedOption;
+  displaySuggestedDish(selectedOption);
 });
 
 function randomSide() {
@@ -71,4 +74,21 @@ function randomDessert() {
 function randomMainDish() {
   let mainDishItem = Math.floor(Math.random()*mains.length);
   return mains[mainDishItem];
+}
+function randomEntireMeal() {
+  return "Entire meal goes here"
+}
+function displaySuggestedDish(selectedOption) {
+  cookpot.style.display = 'none';
+  suggestionHeader.style.display = 'inherit';
+
+  if (selectedOption === 'side') {
+    dinnerSuggestion.innerText = randomSide();
+  } else if (selectedOption === 'main-dish') {
+    dinnerSuggestion.innerText = randomMainDish();
+  } else if (selectedOption === 'dessert') {
+    dinnerSuggestion.innerText = randomDessert();
+  } else {
+    dinnerSuggestion.innerText = randomEntireMeal();
+  }
 }

@@ -62,8 +62,8 @@ span {
   align-items: center;
 
 }
-#dinner h2 {
-  display: none;
+.suggestion-header {
+  display:none;
 }
 .main-boxes {
   justify-content: center;
