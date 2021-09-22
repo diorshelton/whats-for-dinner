@@ -1,8 +1,8 @@
 let form = document.querySelector('form');
 let letsCookButton = document.querySelector('.lets-cook');
-let dinnerSuggestion = document.querySelector('.dinner-suggestion');
 let cookpot = document.querySelector('.cookpot');
-let suggestionHeader = document.querySelector('.suggestion-header');
+let suggestionHeader = document.querySelector('#suggestion');
+let dinnerSuggestion = document.querySelector('.dinner-suggestion');
 
 let sides = [
 "Miso Glazed Carrots",
