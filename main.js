@@ -76,7 +76,11 @@ function randomMainDish() {
   return mains[mainDishItem];
 }
 function randomEntireMeal() {
-  return "Entire meal goes here"
+  let side = randomSide();
+  let main = randomMainDish();
+  let dessert = randomDessert();
+  let entireMeal = `${main} with a side of ${side} and ${dessert} for dessert!`
+  return entireMeal;
 }
 function displaySuggestedDish(selectedOption) {
   cookpot.style.display = 'none';

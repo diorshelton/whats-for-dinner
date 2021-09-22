@@ -39,23 +39,29 @@ background-size: cover;
 .head h1 {
   align-self: center;
 }
-.head button {
+.head-btn {
   align-self: center;
   border-radius: 5px;
   border: none;
   padding: 7px ;
 }
-.main-boxes{
+.main-boxes {
   display: flex;
   flex-flow: column; 
 }
-.lets-cook {
+.lets-cook-btn  {
   padding: 7px 35px;
   background-color: #0fb9b1;
   border: none;
   border-radius: 5px;
   cursor:pointer;
-  
+}
+.clear-btn {
+  size: 25px;
+  padding: 7px 35px;
+  background-color: #95a5a6;
+  border: none;
+  border-radius: 5px;
 }
 .lets-cook:active{
   background-color:#ee5253;
@@ -77,6 +83,7 @@ span {
 #suggestion {
   display:none;
   font-style: italic ;
+  align-items:center;
 }
 .main-boxes {
   display: flex;
