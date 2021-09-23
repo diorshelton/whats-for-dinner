@@ -28,7 +28,7 @@ background-size: cover;
 }
 .head {
   display: flex;
-  flex-direction: row;
+  flex-direction: row wrap;
   height: 50px;
   width: 99.9%;
   background-color: #0fb9b1;
@@ -47,7 +47,13 @@ background-size: cover;
 }
 .main-boxes {
   display: flex;
-  flex-flow: column; 
+  flex-direction: row wrap; 
+}
+.meal-selection ul {
+  text-align: left;
+  margin: 0;
+  padding-left: 0;
+  padding-bottom: 8px;
 }
 .lets-cook-btn  {
   padding: 7px 35px;
@@ -57,11 +63,14 @@ background-size: cover;
   cursor:pointer;
 }
 .clear-btn {
-  size: 25px;
-  padding: 7px 35px;
+  color: white;
+  align-self: flex-end;
+  width: 67px;
+  padding: 7px 5px;
   background-color: #95a5a6;
   border: none;
   border-radius: 5px;
+  text-align: center;
 }
 .lets-cook:active{
   background-color:#ee5253;
@@ -80,7 +89,7 @@ span {
   height: 100px;
   align-items: center;
 }
-#suggestion {
+p#suggestion {
   display:none;
   font-style: italic ;
   align-items:center;
