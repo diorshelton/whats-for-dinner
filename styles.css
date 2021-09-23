@@ -45,10 +45,6 @@ background-size: cover;
   border: none;
   padding: 7px ;
 }
-.main-boxes {
-  display: flex;
-  flex-direction: row wrap; 
-}
 .meal-selection ul {
   text-align: left;
   margin: 0;
@@ -84,15 +80,23 @@ background-size: cover;
 span {
   color: #ee5253;
 }
-#dinner img {
+img#dinner  {
   margin: 25%;
   height: 100px;
   align-items: center;
 }
 p#suggestion {
+  margin:0;
+  padding:0;
   display:none;
   font-style: italic ;
-  align-items:center;
+  text-align: center;
+  font-weight: bolder;
+}
+h2.dinner-suggestion {
+  margin: 0;
+  padding: 0;
+  font-weight:bolder;
 }
 .main-boxes {
   display: flex;
@@ -103,4 +107,8 @@ p#suggestion {
   padding:2.5%;
   background-color:rgba( 225, 225, 225, .9);
   margin-bottom: 10px;
+}
+#dinner.main-boxes {
+  align-items: center;
+  margin: 0;
 }
