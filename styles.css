@@ -80,7 +80,7 @@ background-size: cover;
 span {
   color: #ee5253;
 }
-img#dinner  {
+img.cookpot  {
   margin: 25%;
   height: 100px;
   align-items: center;
