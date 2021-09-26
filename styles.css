@@ -40,6 +40,7 @@ background-size: cover;
   align-self: center;
 }
 .head-btn {
+  display: none;
   align-self: center;
   border-radius: 5px;
   border: none;
@@ -67,6 +68,9 @@ background-size: cover;
   border: none;
   border-radius: 5px;
   text-align: center;
+}
+#hide-button {
+  display: none;
 }
 .lets-cook:active{
   background-color:#ee5253;
