@@ -2,22 +2,28 @@
 
 ## Overview
 
-What's for dinner? The ultimate question. You will be building an app that helps users choose a recipe and put together meals. 
+What's for dinner? The ultimate question. This application was built to answer that question by providing four different dinner options to choose from. Practicing HTML, CSS and JavaScript was an added benefit. 😁
 
-This Solo Challenge gives students and instructors the opportunity to get a pulse on where you are with the foundational concepts of Module 1 curriculum. Students should use this as an opportunity to challenge themselves and work completely independently. Google can (and probably should!) be used, but any other code base should not be referenced. Instructors will be able to use your work, both completion of functionality and code quality, to determine where you stand and if you are behind for this point in the module, provide supports to intervene.
+## Features
+Choose the radio button of the dinner option you would like and click the "Let's Cook" button. A dinner idea will randomly generate on the right-hand side of the page.
 
 The spec for this project can be found [here](https://frontend.turing.io/projects/module-1/dinner.html). 
 
-## Learning Goals
+![app screenshot](assts/wfd-capture.png?raw=true "Optional Title")
 
-- Gain experience building an application that utilizes HTML, CSS and JavaScript
-- Write HTML and CSS to match a provided comp
-- Understand how to listen to and respond to user events
-- Individualize your programming skill set
+## Technologies Used
+
+- HTML 
+- CSS
+- Vanilla JavaScript
 
 ## Setup
 
-- Fork this project to your own Github account
 - Clone the repository to your local machine
 - `cd` into the project
 - Read this README thoroughly, then begin working!
+
+## Future Additions
+Further interations of this app may include these features
+- "Add a recipe" feature to add your own recipes to the list of possible options.
+- Save favorites. If you see something you like. Add it to your favorites list for later
