@@ -9,7 +9,7 @@ Choose the radio button of the dinner option you would like and click the "Let's
 
 The spec for this project can be found [here](https://frontend.turing.io/projects/module-1/dinner.html). 
 
-![app screenshot](assts/wfd-capture.png?raw=true "Optional Title")
+![app screenshot](assets/wfd-capture.png?raw=true "What's for Dinner")
 
 ## Technologies Used
 
